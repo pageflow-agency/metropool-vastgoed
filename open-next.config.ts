@@ -1,4 +1,3 @@
-import { defineConfig } from "@opennextjs/cloudflare";
+const config = {};
 
-// Minimal OpenNext config for Webflow Cloud
-export default defineConfig({});
+export default config;
