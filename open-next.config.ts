@@ -14,6 +14,14 @@ const config: OpenNextConfig = {
   edgeExternals: ["node:crypto"],
   middleware: {
     external: false,
+    override: {
+      wrapper: "cloudflare-edge",
+      converter: "edge",
+      proxyExternalRequest: "fetch",
+      incrementalCache: "dummy",
+      tagCache: "dummy",
+      queue: "dummy",
+    },
   },
 };
 
